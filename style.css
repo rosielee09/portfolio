@@ -107,13 +107,14 @@ p {
   align-items: center;
   color: var(--color-white);
   padding: 1em;
+  z-index: 1;
 }
 
 #navbar.navbar--dark{
   background-color: var(--color-blue);
   padding: 0.4rem;
   transition: all var(--animation-duration) ease-in-out;
-
+  
 }
 
 .navbar__menu {
@@ -146,9 +147,9 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 20px;
-  right: 32px;
-  font-size: 24px;
+  top: 0.625rem;
+  right: 2rem;
+  font-size: 1.5rem;
   color: var(--color-white);
   display: none;
 }
