@@ -62,7 +62,7 @@ function scrollIntoView(selector) {
 
 // When the user scrolls down 20px, show the button
 
-const upBtn = document.querySelector('#upBtn');
+const upBtn = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   upBtn.classList.toggle('visible', document.documentElement.scrollTop > 20);
 });
