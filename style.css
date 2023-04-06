@@ -100,7 +100,6 @@ p {
   margin: var(--font-margin-sm);
 }
 
-
 /* Navbar */
 
 #navbar {
@@ -139,14 +138,12 @@ p {
   margin: 0 0.25rem;
   cursor: pointer;
   border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
+  
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-pink);
+  color: var(--color-green);
+  
 }
 
 .navbar__toggle-btn {
@@ -157,8 +154,6 @@ p {
   color: var(--color-white);
   display: none;
 }
-
-
 
 /* Home */
 
@@ -190,14 +185,12 @@ p {
   padding: 0.5em 0.75em;
   border: solid 2px var(--color-white);
   border-radius: var(--size-border-radius);
-  
 }
 
 .home__contact:hover {
   scale: 1.1;
   transition: all var(--animation-duration) ease;
 }
-
 
 /* Section commn */
 .section {
@@ -333,13 +326,13 @@ p {
   padding: 0.5rem 3rem;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-blue);
   color: var(--color-white);
 }
 
-.category__btn.active .category__cout,
+.category__btn.selected .category__cout,
 .category__btn:hover .category__cout {
   transition: all var(--animation-duration) ease;
   opacity: 1;
@@ -367,7 +360,7 @@ p {
   transition: all var(--animation-duration) ease-out;
 }
 
-.work__projects.anim-out{
+.work__projects.anim-out {
   opacity: 0;
   transform: scale(0.96) translateY(40px);
 }
@@ -383,7 +376,7 @@ p {
   background-color: var(--color-light-white);
 }
 
-.project.invisible{
+.project.invisible {
   display: none;
 }
 
@@ -468,7 +461,6 @@ p {
 
 /* arrowUp */
 #upBtn {
-  
   transition: opacity var(--animation-duration) ease-out;
   opacity: 0;
   position: fixed;
@@ -490,12 +482,11 @@ p {
   pointer-events: none;
 }
 
-#upBtn.visible{
-  opacity:1;
+#upBtn.visible {
+  opacity: 1;
   transition: opacity var(--animation-duration) ease-in;
   pointer-events: auto;
 }
-
 
 /* Contact */
 
