@@ -23,6 +23,9 @@ navbarMenu.addEventListener('click', (event) => {
   scrollIntoView(link);
 });
 
+// when scroll, section active
+
+
 // navbar toggle btn for small screen
 const navbarToggle = document.querySelector('.navbar__toggle-btn');
 navbarToggle.addEventListener('click', (event) => {

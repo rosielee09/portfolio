@@ -127,8 +127,8 @@ p {
 .logo {
   top: 0.625rem;
   padding-top: 0.5rem;
-  width: 1.1em;
-  height: 1.1em;
+  width: 35px;
+  height: 35px;
 }
 
 .navbar__logo {
