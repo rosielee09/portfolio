@@ -293,7 +293,7 @@ p {
 }
 
 .skill {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .skill__description {
@@ -432,8 +432,6 @@ p {
   background-color: var(--color-white);
 }
 
-
-
 /* arrowUp */
 .arrow-up {
   transition: opacity var(--animation-duration) ease-out;
@@ -442,7 +440,7 @@ p {
   bottom: 2.778rem;
   right: 2.778rem;
   height: 3.7rem;
-  width: 3.7rem; 
+  width: 3.7rem;
   font-size: 2rem;
   line-height: 2rem;
   border: none;
@@ -450,12 +448,10 @@ p {
   background-color: var(--color-green);
   color: white;
   cursor: pointer;
-  border-radius: 50%; 
+  border-radius: 50%;
   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
   pointer-events: none;
 }
-
-
 
 .arrow-up.visible {
   opacity: 1;
@@ -492,25 +488,22 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-
   :root {
-      /* Font size */
-  --font-large: 2rem;
-  --font-medium: 1.5rem;
-  --font-regular: 1.25rem;
-  --font-small: 1rem;
-  --font-micro: 0.875rem;
-
+    /* Font size */
+    --font-large: 2rem;
+    --font-medium: 1.5rem;
+    --font-regular: 1.25rem;
+    --font-small: 1rem;
+    --font-micro: 0.875rem;
   }
-  
-  #home{
-  height: 100%;
+
+  #home {
+    height: 100%;
   }
 
   section {
     scroll-margin-top: 3rem;
   }
-
 
   .navbar__toggle-btn {
     display: block;
@@ -524,7 +517,6 @@ p {
 
   .section {
     padding: 1rem;
-    
   }
 
   .navbar__menu {
@@ -558,44 +550,41 @@ p {
 
   .category__btn {
     margin: 4px 0;
-    width: 100%;    
+    width: 100%;
   }
 
   .category__cout {
     right: 2rem;
   }
 
-  .testimonials {    
+  .testimonials {
     flex-direction: column;
     align-items: center;
     margin: 2rem 0;
   }
 
- 
   .testimonial__avatar {
     width: 6.25rem;
     height: 6.25rem;
     margin-bottom: 0.8rem;
   }
 
-.testimonial__avatar:nth-child(even),
-.testimonial__avatar:nth-child(odd) {
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
     margin-left: 0;
     margin-right: 0;
+  }
 
-} 
+  .testimonial__speech-bubble {
+    order: 1;
+  }
 
-.testimonial__speech-bubble{
-  order:1;
-}
-
-.arrow-up {
-  width: 2.778rem;
-  height: 2.778rem;
-  font-size: 1.278rem;
-  line-height: 1.778rem;
-  right: 0.889em;
-  bottom: 0.889em;
-}
-
+  .arrow-up {
+    width: 2.778rem;
+    height: 2.778rem;
+    font-size: 1.278rem;
+    line-height: 1.778rem;
+    right: 0.889em;
+    bottom: 0.889em;
+  }
 }
