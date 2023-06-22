@@ -1,15 +1,21 @@
-'use strict';
+import throttle from './src/throttle.js';
+('use strict');
 
 // navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
-document.addEventListener('scroll', () => {
+
+function runOnScrollNavbarChange() {
   if (window.scrollY > navbarHeight) {
     navbar.classList.add('navbar--dark');
   } else {
     navbar.classList.remove('navbar--dark');
   }
-});
+}
+
+const throttledScroll = throttle(runOnScrollNavbarChange, 100);
+document.addEventListener('scroll', throttledScroll);
+
 
 // navbar click scroll down to id
 const navbarMenu = document.querySelector('.navbar__menu');
@@ -38,14 +44,19 @@ contact.addEventListener('click', (event) => {
 });
 
 // when scroll, home&contact  fade out
-
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 const contactBtn = document.querySelector('.home__contact');
-document.addEventListener('scroll', () => {
+
+
+function onScrollHomeFadeOut() {
   contactBtn.style.opacity = 1 - window.scrollY / homeHeight;
   home.style.opacity = 1 - window.scrollY / homeHeight;
-});
+}
+
+const throttledScrollFadeOut = throttle(onScrollHomeFadeOut, 100);
+document.addEventListener('scroll', throttledScrollFadeOut);
+
 
 // when mouse on contact btn - recover opacity
 contactBtn.addEventListener('mouseenter', (e) => {
