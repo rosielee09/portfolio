@@ -16,7 +16,7 @@ const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
   const link = target.dataset.link;
-  if (link == null) {
+  if (link === null) {
     return;
   }
   navbarMenu.classList.remove('drop');
@@ -24,7 +24,6 @@ navbarMenu.addEventListener('click', (event) => {
 });
 
 // when scroll, section active
-
 
 // navbar toggle btn for small screen
 const navbarToggle = document.querySelector('.navbar__toggle-btn');
@@ -85,7 +84,7 @@ const projects = document.querySelectorAll('.project');
 // when click butn, filter by category
 workBtnContainer.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-  if (filter == null) {
+  if (filter === null) {
     return;
   }
 
