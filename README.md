@@ -1,5 +1,5 @@
 # Portfolio Website
- [Rosie's portfolio](https://rosielee09.github.io/portfolio/)
+ [Rosie's portfolio](https://rosielee09.github.io/portfolio/) 
  
 ## Description
 I created a portfolio website utilizing HTML, CSS, and JavaScript. The website serves as a platform to exhibit my work, showcasing my proficiency in front-end planning, design, logo creation, and development of functional and responsive websites for individuals in the tech industry. 
