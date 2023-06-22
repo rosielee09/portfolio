@@ -16,7 +16,6 @@ function runOnScrollNavbarChange() {
 const throttledScroll = throttle(runOnScrollNavbarChange, 100);
 document.addEventListener('scroll', throttledScroll);
 
-
 // navbar click scroll down to id
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
@@ -48,7 +47,6 @@ const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 const contactBtn = document.querySelector('.home__contact');
 
-
 function onScrollHomeFadeOut() {
   contactBtn.style.opacity = 1 - window.scrollY / homeHeight;
   home.style.opacity = 1 - window.scrollY / homeHeight;
@@ -56,7 +54,6 @@ function onScrollHomeFadeOut() {
 
 const throttledScrollFadeOut = throttle(onScrollHomeFadeOut, 100);
 document.addEventListener('scroll', throttledScrollFadeOut);
-
 
 // when mouse on contact btn - recover opacity
 contactBtn.addEventListener('mouseenter', (e) => {
